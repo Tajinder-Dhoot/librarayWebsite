@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i&display=swap');
+
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0; }
+
+#page { max-width: 1200px; margin: 0 auto; padding: 0 0 20px 0px; position: relative; background-color: #D9D9BF; }
+/*text*/
+
+h1 { margin:0 0 1em 0; font-size: 2.8em; font-weight:700; }
+h2 { margin:0 0 0.5em 0; font-size: 1.6em; font-weight:700; line-height: 1.1em; }
+h3 { margin:0 0 0.5em 0; font-size: 1.3em; font-weight:700; }
+h4 { margin:0 0 1.5em 0; font-size: 1em; font-weight:700; }
+
+p { margin: 0 0 1em 0; }
+
+a { color: #007eff; }
+a:visited { color:#65b1ff; }
+
+a.btn { font-size: 1.2em; text-decoration: none; color; #0c114a; border: 1px solid #40c0ff; padding: 4px 15 px;
+	transition: background-color .5s; }
+a.btn:hover {background-color: #c3e6f7; }
+
+/* header*/
+
+header { height: 150px; position: relative; background-color: #8B3A3A;}
+
+header a.logo { 
+	z-index: 1;
+	width: 130px; height: 130px;
+	background-image: url("../images/background/logo.png");
+	background-size: contain; /* photo size is 200*200. this property will resize the pic accrding to width and height of block.*/
+	display: block;
+	position: absolute;
+	top: 15px; left: 50px; }
+	
+header a.logo span { display: none; }
+
+header div.userAccount { position: absolute; top: 50px; left: 70%; width: 25%;}
+
+header div.userAccount a.btn { background-color: #90FEFB; border: none; border-radius: 4px;  padding: 0 5px; margin-right: 5px;}
+
+/*Section Display image*/
+				
+section.displayImage { 
+	height: 500px;
+	background-image: url("../images/background/background_image_1500(500).jpg");
+	position: relative; }
+	
+section div.displayText { text-align: center;
+	width: 50%;
+	position: absolute;	
+	top:50%; left: 50%;
+	transform: translate(-50%, -50%); }
+	
+section div.displayText h1 { margin: 1em; color: #fff; }
+
+/*Section Best In Demand*/
+section.bestDemand { margin-bottom: 20px; }
+
+section.bestDemand::after { content: ''; display: block; clear: both; }
+
+section.bestDemand h1 {font-size: 1em; padding: 10px 0px 0px 10px; margin-bottom: 10px; width: 200px}
+
+section.bestDemand a.btn { color: #fff; background-color: #008080; transition: background-color .5s; border: none; border-radius: 4px; padding: 0px 10px;}
+
+section.bestDemand aside {width: 25%; float: left; text-align: center; }
+
+section.bestDemand aside div.bookInfo { border-radius: 10px; margin: 10px 40px; padding: 20px 0px; background-color: #fff; }
+
+section.bestDemand aside div.bookInfo img { height: 150px; width: 100px; margin: 10px; }
+
+section.bestDemand aside div.bookInfo .title,.writer {margin-bottom: 10px;}
+
+/* Section New Arrivals*/
+section.newArrivals { margin-bottom: 20px; }
+
+section.newArrivals::after { content: ''; display: block; clear: both; }
+
+section.newArrivals h1 {font-size: 1em; padding: 10px 0px 0px 10px; margin-bottom: 10px; width: 200px}
+
+section.newArrivals a.btn { color: #fff; background-color: #008080; transition: background-color .5s; border: none; border-radius: 4px; padding: 0px 10px;}
+
+section.newArrivals aside {width: 25%; float: left; text-align: center; }
+
+section.newArrivals aside div.bookInfo { border-radius: 10px; margin: 10px 40px; padding: 20px 0px; background-color: #fff; }
+
+section.newArrivals aside div.bookInfo img { height: 150px; width: 100px; margin: 10px; }
+
+section.newArrivals aside div.bookInfo .title,.writer {margin-bottom: 10px;}
+
+/*Section Reviews*/
+
+section.reviews { margin-bottom: 20px; }
+
+section.reviews h1 {font-size: 1em; padding: 10px 0px 0px 10px; margin-bottom: 10px; width: 200px}
+
+section.reviews div.bookReview::after { content: ''; display: block; clear: both; }
+
+section.reviews div.bookReview { margin: 0px 40px 10px 40px; border-radius: 10px; background-color: #fff; }
+
+section.reviews div.bookReview img { width: 100px; height: 150px; padding: 15px 0px 15px 0px;}
+
+section.reviews div.bookReview div.reviewBookImage {width:20%; text-align:center; float: left; }
+
+section.reviews div.bookReview blockquote { width: 70%; margin: 0px; float: left; padding: 20px;}
+
+section.reviews div.bookReview blockquote p { width: 100%; overflow-wrap: break-word; font-style: italic;}
+
+
+/*Section network*/
+section.network { text-align: center; }
+
+section.network::after { content: ''; display: block; clear: both; }
+
+section.network aside { width: 50%; float:left;  padding-bottom: 40px;}
+
+section.network aside div { padding: 10px; }
+
+section.network img {width: 50px; height: 50px; border-radius: 8px; margin-right: 10px;  }
+
+/*nav section*/
+
+nav {background-color: rgba(0,0,0,.65);
+	position: absolute; /* since nav element is sitting in the page main section parallel to other sections and footer. it will set itself with respect to the page */
+	top: 150px;
+	left:0px;
+	padding: 50ox 0 0 0;
+	width: 100%; /* if we don't set width, nav element will be as wide as the content inside it*/
+}
+
+nav ul::after { content: ''; display: block; clear: both; }
+
+nav ul { list-style-type: none; margin: 0; padding: 0; }
+
+nav ul li:hover { background-color: #AC9090; }
+nav ul li:hover > ul { display: block; }
+
+nav ul li a { display: block; 
+	text-decoration: none; color: #fff; 
+	padding: 10px 20px; 
+	position: relative; 
+	width: 150px; }
+	
+nav ul li a:visited { color: #fff }
+
+nav ul li a:hover { background-color: #AA5303; color: #fff; }
+
+nav ul ul { position: absolute; top: 100%; background-color: #AC9090; display: none; } /* top: 100% means 100% of parent element i.e. element <nav> */
+
+nav ul ul li { position: relative; } /* this is to position its child element with respect ti it*/
+
+nav ul ul ul { left: 100%; top: 0px; }
+
+/* nav top level*/
+
+nav > ul { padding-left: 200px; }  /* only target element ul which is imediate child of parent element nav*/
+
+nav > ul >li { float: left; }
+
+/*Section footer*/
+footer { text-align: center; }
+
+footer div.content { margin: 10px 0 0px 0; }
+
+footer div.content a { margin-right: 10px; }
+
+
+
+
+/* Media Queries*/
+
+@media screen and (max-width: 812px) {
+	
+	/* section Display Image*/ 
+	
+	section.displayImage { 
+	background-image: url("../images/background/background_image_812(500).jpg");
+	}
+	
+	/* Demand Section*/ 
+	
+	section.bestDemand aside {width: 50%; }
+	
+	/*Section New Arrivals*/ 
+	
+	section.newArrivals aside {width: 50%; }
+	
+	}
+	
+@media screen and (max-width: 650px) {
+	
+	/**header section*/
+
+	header div.userAccount { position: absolute; top: 50px; left: 60%; width: 20%; text-align: center; }
+
+	header div.userAccount a.btn { padding: 0 5px; margin: 10px 0; display: block; }
+	
+	/* section Display Image*/ 
+
+	section.displayImage { 
+	height: 350px;
+	background-image: url("../images/background/background_image_650(350).jpg");
+	}
+	
+	/*Section Display image*/
+					
+	section div.displayText { font-size: 0.7em;}
+	
+	/* section network*/
+	
+	section.network aside { width: 100%; }
+
+	}
+
+@media screen and (max-width: 478px) {
+	
+	/**header section*/
+
+	header div.userAccount { position: absolute; top: 20px; left: 60%; width: 20%; text-align: center; }
+
+	header div.userAccount a.btn { padding: 0 5px; margin: 20px 0; display: block; }
+	
+	/* section Display Image*/ 
+
+	section.displayImage { 
+	height: 300px;
+	background-image: url("../images/background/background_image_478(300).jpg");
+	}
+	
+	/* Demand Section*/ 
+	
+	section.bestDemand aside {width: 100%; }
+	
+	/*Section New Arrivals*/ 
+	
+	section.newArrivals aside {width: 100%; }
+	
+	/*section reviews*/
+	
+	section.reviews div.bookReview img { width: 50px; height: 75px; }
+
+	section.reviews div.bookReview div.reviewBookImage {width:100%; }
+
+	section.reviews div.bookReview blockquote { width: 100%; margin: 0px; padding: 20px; margin: 0 20px;}
+
+	section.reviews div.bookReview blockquote p { width: 100%; overflow-wrap: break-word; font-style: italic;}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
